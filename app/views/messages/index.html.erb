@@ -8,12 +8,13 @@
     <%= link_to message.id, message %>
 <%= message.content %>
 &gt; 
-<%= message.content %>
+<%= message.title %>
 
 </li>
   
 <% end %>
 
 </ul>
+<%= paginate @messages %>
 
 <%= link_to '新規メッセージの投稿', new_message_path %>
